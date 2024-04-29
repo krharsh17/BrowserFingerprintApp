@@ -13,6 +13,8 @@
 		DDAF12252BDFA9D10098D2CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DDAF12242BDFA9D10098D2CA /* Base */; };
 		DDAF12272BDFA9D20098D2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAF12262BDFA9D20098D2CA /* Assets.xcassets */; };
 		DDAF122A2BDFA9D20098D2CA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DDAF12292BDFA9D20098D2CA /* Base */; };
+		DDAF12332BDFB9BA0098D2CA /* FingerprintPro in Frameworks */ = {isa = PBXBuildFile; productRef = DDAF12322BDFB9BA0098D2CA /* FingerprintPro */; };
+		DDAF12352BDFCCDE0098D2CA /* GetVisitsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF12342BDFCCDE0098D2CA /* GetVisitsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		DDAF12262BDFA9D20098D2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDAF12292BDFA9D20098D2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDAF122B2BDFA9D20098D2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAF12342BDFCCDE0098D2CA /* GetVisitsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVisitsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAF12332BDFB9BA0098D2CA /* FingerprintPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				DDAF121D2BDFA9D10098D2CA /* AppDelegate.swift */,
 				DDAF121F2BDFA9D10098D2CA /* SceneDelegate.swift */,
 				DDAF12212BDFA9D10098D2CA /* ViewController.swift */,
+				DDAF12342BDFCCDE0098D2CA /* GetVisitsResponse.swift */,
 				DDAF12232BDFA9D10098D2CA /* Main.storyboard */,
 				DDAF12262BDFA9D20098D2CA /* Assets.xcassets */,
 				DDAF12282BDFA9D20098D2CA /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "device-print";
+			packageProductDependencies = (
+				DDAF12322BDFB9BA0098D2CA /* FingerprintPro */,
+			);
 			productName = "device-print";
 			productReference = DDAF121A2BDFA9D10098D2CA /* device-print.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = DDAF12112BDFA9D10098D2CA;
+			packageReferences = (
+				DDAF12312BDFB9BA0098D2CA /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */,
+			);
 			productRefGroup = DDAF121B2BDFA9D10098D2CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				DDAF12222BDFA9D10098D2CA /* ViewController.swift in Sources */,
 				DDAF121E2BDFA9D10098D2CA /* AppDelegate.swift in Sources */,
 				DDAF12202BDFA9D10098D2CA /* SceneDelegate.swift in Sources */,
+				DDAF12352BDFCCDE0098D2CA /* GetVisitsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDAF12312BDFB9BA0098D2CA /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fingerprintjs/fingerprintjs-pro-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDAF12322BDFB9BA0098D2CA /* FingerprintPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDAF12312BDFB9BA0098D2CA /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */;
+			productName = FingerprintPro;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDAF12122BDFA9D10098D2CA /* Project object */;
 }
